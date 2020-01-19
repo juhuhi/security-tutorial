@@ -34,7 +34,7 @@ yellow함수를 살펴 보면, eax 레지스터에 buffer의 값을 한 byte씩 
 
 #### 그래서 비밀번호는  
 
-0x38 0x34 0x33 0x37 0x31 0x30 0x36 0x35를 십진수로 바꾼, 
+0x38 0x34 0x33 0x37 0x31 0x30 0x36 0x35를 십진수로 바꾼,
 
 5652515549485453이라고 생각했는데, 84371065
 
@@ -57,30 +57,20 @@ yellow함수를 살펴 보면, eax 레지스터에 buffer의 값을 한 byte씩 
 # Red bomb password 찾기_
 
 ![red1](red1.PNG)
-<<<<<<< HEAD
 
-Red도 yellow처럼 풀어보고자 하였으나, 다가가는 방식이 확연히 달라서 힌트를 얻기 위해 시작 부분 처음 부분 힌트를 읽고 시작하였다. 
+Red도 yellow처럼 풀어보고자 하였으나, 다가가는 방식이 확연히 달라서 힌트를 얻기 위해 시작 부분 처음 부분 힌트를 읽고 시작하였다.
 
 #### 끈이 끊어지는 경우 = wire_색깔의 부분이 다 0x0으로 처리 되는 경우
 
-![red2](C:\Users\한주희\Desktop\security-tutorial\5-Reversing2\HW-5\한주희\red2.PNG)
+![red2](red2.PNG)
 
-해당 부분이 위에 경우에 해당되었다. 
+해당 부분이 위에 경우에 해당되었다.
 
 jle= 두번째 값이 크거나 같은 경우 지정된 주소로 점프 이기 때문에 [ebp-0x8]의 주소값에 들어있는 값보다 0x12가 작아야만  폭탄 제거가 가능하다.
 
-흐름을 살펴보자면, 
+흐름을 살펴보자면,
 
-![red3](C:\Users\한주희\Desktop\security-tutorial\5-Reversing2\HW-5\한주희\red3.PNG)
-
-
-
-
-
-
-
-
-
+![red3](red3.PNG)
 
 
 
@@ -89,6 +79,6 @@ jle= 두번째 값이 크거나 같은 경우 지정된 주소로 점프 이기 
 
 #### 연산자 설명
 
-![last](C:\Users\한주희\Desktop\security-tutorial\5-Reversing2\HW-5\한주희\last.PNG)
+![last](last.PNG)
 =======
 >>>>>>> daef5b078b61c5f66f421d0956e30dcfd1f376e2
